@@ -1,0 +1,8 @@
+Order Number,Order Date,Customer Name,Phone,County,Address,Product,Category,Value,Quantity,Expected Dispatch,Delivery By,Latitude,Longitude
+URG001,2025-06-19 08:30:00,John Smith,+447123456789,Greater London,"123 High Street, London, SW1A 1AA",Gaming Laptop RTX 4080,electronics,1299.99,1,2025-06-19 16:00:00,2025-06-20 18:00:00,51.5074,-0.1278
+URG002,2025-06-18 14:20:00,Sarah Johnson,+447987654321,West Midlands,"456 Oak Avenue, Birmingham, B1 1AA",Smart Kitchen Scale Pro,kitchen,89.99,2,2025-06-19 15:30:00,2025-06-21 17:00:00,52.4862,-1.8904
+URG003,2025-06-16 11:15:00,Mike Wilson,+447555123456,Greater Manchester,"789 Pine Road, Manchester, M1 1AA",Wireless Gaming Mouse RGB,electronics,79.99,1,2025-06-19 18:00:00,2025-06-22 16:00:00,53.4808,-2.2426
+URG004,2025-06-19 12:45:00,Emma Davis,+447333987654,West Yorkshire,"321 Elm Street, Leeds, LS1 1AA",Bluetooth Speaker Waterproof,electronics,45.99,1,2025-06-19 14:30:00,2025-06-20 15:00:00,53.8008,-1.5491
+URG005,2025-06-14 09:30:00,Alex Thompson,+447777555333,Merseyside,"654 Maple Close, Liverpool, L1 1AA",Fitness Tracker Pro Max,electronics,199.99,1,2025-06-19 17:00:00,2025-06-21 19:00:00,53.4084,-2.9916
+BATCH01,2025-06-18 16:20:00,Lisa Parker,+447444666777,Essex,"111 Rose Garden, Chelmsford, CM1 1AA",Smart Kitchen Scale Pro,kitchen,89.99,1,2025-06-19 19:00:00,2025-06-22 12:00:00,51.7356,0.4685
+BATCH02,2025-06-17 13:10:00,David Brown,+447222444888,Kent,"222 Violet Way, Canterbury, CT1 1AA",Smart Kitchen Scale Pro,kitchen,89.99,3,2025-06-19 19:30:00,2025-06-23 14:00:00,51.2802,1.0789
