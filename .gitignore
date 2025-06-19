@@ -1,0 +1,303 @@
+# Order Intelligence Platform - .gitignore
+
+# ===================================
+# NODE.JS AND NPM
+# ===================================
+
+# Dependency directories
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+.env.production
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===================================
+# WAREHOUSE DATA AND CSV FILES
+# ===================================
+
+# CSV files containing real customer data
+# (Keep sample/demo files, exclude production data)
+orders_*.csv
+customer_data_*.csv
+production_orders.csv
+live_data.csv
+real_orders_*.csv
+
+# Exclude test CSV files with real data
+*_production.csv
+*_live.csv
+*_real.csv
+
+# But keep demo and sample files
+!sample_*.csv
+!demo_*.csv
+!test_data_*.csv
+!*_template.csv
+
+# Export files from production
+exports/
+data_exports/
+order_exports/
+
+# ===================================
+# DEVELOPMENT AND TESTING
+# ===================================
+
+# IDE and editor files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output
+
+# Jest
+.jest/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Performance profiling
+performance_profiles/
+chrome_profiles/
+
+# ===================================
+# BUILD AND DISTRIBUTION
+# ===================================
+
+# Build directories
+build/
+dist/
+out/
+
+# Webpack
+.webpack/
+
+# Rollup
+.rollup.cache
+
+# Parcel
+.parcel-cache/
+
+# ===================================
+# LOGS AND DEBUGGING
+# ===================================
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# ===================================
+# PRODUCTION AND DEPLOYMENT
+# ===================================
+
+# Production configuration files
+config/production.js
+config/staging.js
+config/local.js
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.ca-bundle
+
+# Docker
+.dockerignore
+Dockerfile.prod
+docker-compose.prod.yml
+
+# Kubernetes
+k8s-secrets.yml
+kubernetes-prod/
+
+# ===================================
+# DOCUMENTATION BUILD
+# ===================================
+
+# Generated documentation
+docs/_site/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+
+# API documentation builds
+api-docs/build/
+jsdoc-output/
+
+# ===================================
+# TEMPORARY AND CACHE FILES
+# ===================================
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Cache directories
+.cache/
+.next/
+.nuxt/
+.vuepress/dist/
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# ===================================
+# WAREHOUSE-SPECIFIC IGNORES
+# ===================================
+
+# Backup files from production
+backups/
+order_backups/
+data_snapshots/
+
+# Performance monitoring data
+performance_logs/
+metrics_export/
+
+# User-generated content during testing
+user_uploads/
+test_uploads/
+
+# License and activation files
+license.key
+activation.dat
+
+# Warehouse configuration files with sensitive data
+warehouse_config.json
+api_keys.json
+secrets.json
+
+# ===================================
+# KEEP IMPORTANT FILES
+# ===================================
+
+# Keep sample and template files
+!sample_urgent_orders.csv
+!order_template.csv
+!demo_data.csv
+!test_scenarios.csv
+
+# Keep documentation
+!docs/
+!*.md
+!LICENSE
+!CONTRIBUTING.md
+!CHANGELOG.md
+
+# Keep configuration templates
+!config/default.js
+!config/template.js
+!.env.template
+
+# ===================================
+# COMMENTS FOR WAREHOUSE TEAMS
+# ===================================
+
+# This .gitignore is specifically designed for warehouse management systems
+# 
+# Key principles:
+# 1. Never commit real customer data or production CSV files
+# 2. Keep sample/demo data for development and testing
+# 3. Exclude sensitive configuration and API keys
+# 4. Include performance and security considerations
+# 
+# When adding new files, consider:
+# - Does this contain customer data?
+# - Is this sensitive operational information?
+# - Could this be useful for other developers?
+# - Does this need to be shared across team members?
+# 
+# For production deployments:
+# - Use environment variables for sensitive configuration
+# - Implement proper data retention policies
+# - Monitor for accidental data commits
+# - Regular security audits of committed files
+
+# ===================================
+# SECURITY SCANNING EXCLUSIONS
+# ===================================
+
+# Security scanning tools
+.snyk
+security-scan-results/
+vulnerability-reports/
+
+# Code quality tools
+.sonarqube/
+.scannerwork/
+
+# ===================================
+# LAST UPDATED
+# ===================================
+
+# This .gitignore was last updated: 2025-06-19
+# Version: 2.0.0 (Phase 2 Complete)
+# 
+# Generated with Claude Code 🤖
+# Co-Authored-By: Claude <noreply@anthropic.com>

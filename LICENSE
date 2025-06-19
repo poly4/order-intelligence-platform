@@ -1,0 +1,131 @@
+MIT License with Warehouse Operations Addendum
+
+Copyright (c) 2025 Order Intelligence Platform Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## WAREHOUSE OPERATIONS ADDENDUM
+
+### Data Protection and Privacy
+
+1. **Customer Data Handling**: This software processes customer delivery information,
+   order details, and geographic data. Users are responsible for:
+   - Complying with GDPR, CCPA, and applicable data protection regulations
+   - Implementing appropriate data retention and deletion policies
+   - Securing customer information during processing and storage
+   - Obtaining necessary consents for data processing
+
+2. **Operational Data Security**: The software handles warehouse operational data
+   including dispatch schedules, performance metrics, and efficiency calculations.
+   Users must:
+   - Implement appropriate access controls for sensitive operational data
+   - Secure CSV files and data exports containing customer information
+   - Monitor and audit data access in production environments
+   - Implement backup and disaster recovery procedures
+
+### Commercial Use and Enterprise Deployment
+
+3. **Enterprise Licensing**: Organizations using this software for commercial
+   warehouse operations acknowledge:
+   - This software is provided "as-is" for warehouse management purposes
+   - Users are responsible for testing and validation in their specific environment
+   - No warranties are provided regarding operational efficiency improvements
+   - Integration with existing warehouse management systems is user responsibility
+
+4. **Performance Claims**: While the software includes efficiency improvement
+   calculations (15-45% batch optimization), actual results may vary based on:
+   - Warehouse layout and operational procedures
+   - Order volume and product mix
+   - Staff training and system adoption
+   - Integration with existing systems and workflows
+
+### Third-Party Dependencies
+
+5. **Open Source Components**: This software incorporates the following third-party
+   open source components under their respective licenses:
+   - Chart.js (MIT License) - https://github.com/chartjs/Chart.js
+   - Papa Parse (MIT License) - https://github.com/mholt/PapaParse
+   - Leaflet.js (BSD 2-Clause License) - https://github.com/Leaflet/Leaflet
+
+6. **CDN Dependencies**: The software references external CDN resources:
+   - Users are responsible for ensuring CDN availability and security
+   - Consider hosting dependencies locally for production environments
+   - Monitor for security updates in all external dependencies
+
+### Operational Disclaimer
+
+7. **Warehouse Operations**: This software is designed to assist with warehouse
+   operations but:
+   - Should not be the sole system for critical dispatch decisions
+   - Requires human oversight for final operational decisions
+   - May need customization for specific warehouse environments
+   - Should be tested thoroughly before production deployment
+
+8. **Data Accuracy**: Users are responsible for:
+   - Validating accuracy of CSV input data
+   - Verifying calculation results in their operational context
+   - Implementing appropriate quality control procedures
+   - Maintaining accurate master data (postcodes, counties, product information)
+
+### Support and Maintenance
+
+9. **Community Support**: This is community-supported software:
+   - No commercial support guarantees are provided
+   - Users should contribute improvements back to the community
+   - Documentation and bug reports help improve the software for all users
+   - Enterprise users are encouraged to sponsor development efforts
+
+10. **Updates and Security**: Users should:
+    - Monitor for security updates and apply them promptly
+    - Test updates in non-production environments before deployment
+    - Implement monitoring and alerting for production systems
+    - Have rollback procedures in place for failed updates
+
+### Geographic and Regulatory Considerations
+
+11. **UK-Specific Features**: This software includes UK-specific functionality:
+    - UK postcode validation and geographic county mapping
+    - Adjacency algorithms based on UK geography
+    - Users outside the UK may need to modify geographic components
+    - Validation patterns may need adjustment for other countries
+
+12. **Regulatory Compliance**: Users must ensure compliance with:
+    - Local warehouse safety regulations
+    - Employment law regarding worker performance monitoring
+    - Data protection regulations in their jurisdiction
+    - Industry-specific compliance requirements (e.g., pharmaceutical, food)
+
+---
+
+## ATTRIBUTION
+
+This software was developed using Claude Code with parallel subagent architecture:
+- Phase 1: 4 specialized agents (CSV, Validation, State, Error)
+- Phase 2: 4 specialized agents (DPS, Queue, Pack, Batch)
+- Future phases: Continued parallel development approach
+
+**Generated with Claude Code** 🤖  
+**Co-Authored-By**: Claude <noreply@anthropic.com>
+
+---
+
+**This license balances open source principles with the practical needs of
+enterprise warehouse operations. Users gain full freedom to use and modify
+the software while understanding their responsibilities for data protection,
+operational safety, and regulatory compliance.**
